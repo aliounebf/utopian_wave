@@ -1,10 +1,10 @@
 # Système de Sensibilité aux Limites de l'IA
 
-Ce projet vise à créer une page d'accueil dédiée à sensibiliser sur les limites de l'intelligence artificielle (IA) et promouvoir une utilisation éthique de cette technologie.
+Ce projet vise à créer site web dédiée à sensibiliser sur les limites de l'intelligence artificielle (IA) et promouvoir une utilisation éthique de cette technologie.
 
 ## Fonctionnalités Principales
 
-- **Vue d'ensemble :** Une présentation succincte sur l'objectif du système de sensibilité.
+- **Vue d'ensemble :** Une présentation concis sur l'objectif du système de sensibilité.
 - **Liste des Fonctionnalités :** Met en avant les caractéristiques clés, notamment :
   - Explication des limites de l'IA
   - Importance de l'éthique dans l'utilisation de l'IA
