@@ -21,6 +21,7 @@ Ce projet vise à créer une page d'accueil dédiée à sensibiliser sur les lim
 
 - **Technologies Utilisées :** Stack technique incluant HTML, TailwindCSS et JavaScript.
     - **Choix de l'utilisation de TailwindCSS :** 
+         
          **(Florent nous l'a imposer)**
 
          **Productivité Accrue :** L'approche utilitaire de Tailwind permet une productivité accrue en éliminant le besoin de créer des classes CSS personnalisées pour chaque élément. Cela peut accélérer le processus de développement, en particulier lors de la création de prototypes ou de l'itération rapide sur le design.
