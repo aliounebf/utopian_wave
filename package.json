@@ -1,0 +1,17 @@
+{
+  "name": "utopian_wave",
+  "version": "1.0.0",
+  "description": "Ce projet vise à créer site web dédiée à sensibiliser sur les limites de l'intelligence artificielle (IA) et promouvoir une utilisation éthique de cette technologie.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1 --- npx tailwindcss -i ./src/css/style.css -o ./src/dist/style.css --watch"
+  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
+
