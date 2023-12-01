@@ -1,296 +1,547 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/Users/cheikhfall/Desktop/utopian_wave/src/dist/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a946a0c10d.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/rippleui@1.12.1/dist/css/styles.css"
+  />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+  <script src="https://kit.fontawesome.com/a946a0c10d.js" crossorigin="anonymous"></script>
+  <title>FIABILITER</title>
 </head>
+<body class="bg-[#060C1C]">
 
-<body class="bg-[#060C1C] max-w-full">
-    <header>
-        <nav id="nav-bar" role="navigation" class="fixed w-full top-0 bg-[#060C1C] z-50">
-            <ul class="text-white text-[22px] grid grid-cols-6 font-bebas items-center underline underline-offset-2 justify-items-center ">
-                <li><img src="images/LOGO-BLANC-7.webp" alt="" class="w-28"></li>
-                <li id="communaute" class="h-7"><a href="">COMMUNAUTE</a></li>
-                <li class=""><a href="">ARTICLE</a></li>
-                <li class=""><a href="">CONTACT</a></li>
-                <li class=" col-span-2 bg-[#FF6700] w-[124px] h-[41px] rounded-lg text-center grid items-center ml-[148px]"><a href="">CONNEXION</a></li>
-            </ul>
+  <nav class="fixed w-full z-20 top-0 start-0 backdrop-blur-md bg-[#060C1C]">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="images/LOGO-BLANC-7.webp" class="w-[75px]" alt="">
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">CONNEXION</button>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="font-['Bebas_Neue'] text-2xl flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700 gap-5 sm:bg-transparent bg-slate-800">
+        <li>
+          <a href="#" class="flex w-full bg-slate-700 sm:bg-transparent py-2 px-3 text-white bg-orange-700 rounded-lg md:bg-transparent md:hover:text-orange-500 md:p-0" aria-current="page">COMMUNAUTE</a>
+        </li>
+        <li>
+          <a href="#" class="flex w-full bg-slate-700 sm:bg-transparent py-2 px-3 text-white rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ARTICLES</a>
+        </li>
+        <li>
+          <a href="contact.html" class="flex w-full bg-slate-700 sm:bg-transparent py-2 px-3 text-white rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  
 
-        </nav>
-    </header>
-    <main>
-        <img src="images/Fond-bleu-nuit-1.webp" class="h-[779px] min-w-full" alt="">
-        <div>
-            <img src="images/Firefly-intelligence-artificielle-sans-fond-d_image-18428-1.webp" alt=""
-                class="w-[600px] h-[600px] absolute top-[179px]">
-            <h1 class="absolute text-white text-[92px] top-[314px] left-[616px] font-bebas">NE LAISSER PAS L'IA AVOIR <BR> LE
-                DERNIER MOT</h1>
-            <a href="#"
-                class=" absolute text-white bg-[#FF6700] w-[204px] h-[47px] rounded-lg text-center top-[607px] left-[619px] grid font-bebas "><button
-                    class="align-middle text-[26px]">DECOUVRIR COMMENT</button></a>
+  <section class="flex flex-row bg-center sm:bg-start bg-no-repeat bg-[url('./images/Fond-bleu-nuit-1.webp')] bg-blend-multiply">
+    <img src="images/Firefly-intelligence-artificielle-sans-fond-d_image-18428-1.webp" alt="robot" class="w-full h-auto hidden sm:h-2/3 sm:w-1/3 sm:block m-auto">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class=" font-['Bebas_Neue'] tracking-wide flex justify-start items-start w-full sm:w-2/3 text-left mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:w-auto lg:text-[80px]">NE LAISSER PAS L'IA AVOIR <br> LE DERNIER MOT</h1>
+        <div class="w-full sm:w-1/2 flex flex-col space-y-4 sm:flex-row sm:justify-start sm:space-y-0">
+            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
+                Decouvrir comment
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
         </div>
+    </div>
+  </section>
 
-        <section id="utilisation"
-            class="h-[450px] grid grid-cols-3 grid-rows-[100px_1fr] justify-around justify-items-center items-center content-center">
-            <h2 class="text-white text-center col-span-3 align-middle text-[55px] font-bebas mt-[55px]">L'UTILISATION DES IA DANS LE MONDE DU
-                TRAVAIL</h2>
-            <p class="text-white text-center text-[20px] font-montserrat"><span class="text-[130px] font-bebas">92%</span> <br> des entreprise <br>
-                aujourd'hui utilisent et <br> dépendent des IA</p>
-            <p class="text-white text-center text-[20px] font-montserrat"><span class="text-[130px] font-bebas">2,2</span> <br> milliards d'euros
-                <br> consacrés à l'IA en <br> France dans le projet <br> France 2030
-            </p>
-            <p class="text-white text-center text-[20px] font-montserrat"><span class="text-[130px] font-bebas">65%</span> <br> se disent
-                craintives par <br> rapport à l'usage que <br> peuvent en faire leurs <br> employés.</p>
 
-        </section>
-        <section id="risque"
-            class="h-[940px] w-[972px] m-auto grid grid-cols-2 grid-rows-[100px_1fr_1fr] gap-y-14 justify-around justify-items-center ">
-            <h2 class="col-span-2 text-white text-center align-middle text-[55px] font-bebas">QUELS SONT LES RISQUES DE L'IA ?</h2>
+  <h2 class="text-[55px] font-bold w-full px-5 text-center my-10 text-white font-['Bebas_Neue']">L'utilisation des ia dans le monde du travail</h2>
 
-            <article class="w-[400px]  bg-white rounded-3xl grid">
-
-                <img src="images/Illu-SÉCURITÉ-1.webp" alt="" class="w-[310px] ml-auto mr-auto mt-[21px]">
-                <p class="grid justify-center items-center font-montserrat-bold ">Protection de la vie privée</p>
-                <button type="submit" class="text-white w-[121px] h-[29px] bg-[#060C1C] m-auto mt-[-1px] font-bebas rounded-[10px]">En savoir
-                    plus</button>
-
-            </article>
-
-            <article class="w-[400px]  bg-white rounded-3xl grid">
-
-                <img src="images/Illu-TRANSPARENCE-1.webp" alt="" class="w-[310px] ml-auto mr-auto">
-                <p class="grid justify-center items-center font-montserrat-bold">Protection de la vie privée</p>
-                <button type="submit" class="text-white w-[121px] h-[29px] bg-[#060C1C] m-auto mt-[-1px]font-bebas rounded-[10px] mb-[26px] font-bebas">En savoir
-                    plus</button>
-
-            </article>
-
-            <article class="w-[400px]  bg-white rounded-3xl grid">
-
-                <img src="images/biais-figma-1.webp" alt="" class="w-[310px] ml-auto mr-auto mt-[21px]">
-                <p class="grid justify-center items-center font-montserrat-bold">Protection de la vie privée</p>
-                <button type="submit" class="text-white w-[121px] h-[29px] bg-[#060C1C] m-auto mt-[-1px] font-bebas rounded-[10px]">En savoir
-                    plus</button>
-
-            </article>
-
-            <article class="w-[400px]  bg-white rounded-3xl grid">
-
-                <img src="images/Illu-DÉPENDANCE-1.webp" alt="" class="w-[310px] h-[225px] ml-auto mr-auto mt-[21px]">
-                <p class="grid justify-center items-center font-montserrat-bold">Protection de la vie privée</p>
-                <button type="submit" class="text-white w-[121px] h-[29px] bg-[#060C1C] m-auto mt-[-1px] font-bebas rounded-[10px]">En savoir
-                    plus</button>
-
-            </article>
-        </section>
-
-        <section id="orange" class="mt-[70px]">
-            <img src="images/FOND-ORANGE-1.webp" alt="">
-            <h2 id="exploiter" class="relative top-[-1497px] text-[55px] text-white text-center font-bebas">EXPLOITEZ LE MEILLEUR
-                DE L'IA EN 4 ÉTAPES</h2>
-                <div id="definir" class="w-[500px] h-[400px] absolute top-[160em] left-[51em]">
-                    <div id="bloc1" class="w-[444px] h-[230px] bg-white p-[19px] rounded-2xl shadow-2xl">
-                        <h4 class="font-montserrat text-[32px]"><strong>Définir un objectif clair :</strong></h4><br>
-                        <p class="font-montserrat font-light text-[16px]">
-                            
-                            Avant d'utiliser l'IA, identifiez précisément l'objectif que vous souhaitez atteindre <br> <br>
-                            Que ce soit l'automatisation de tâches, l'analyse de données, ou autre.
-
-                        </p>
-                        <img class="absolute top-[-162px] left-[328px] w-[242px]" src="images/illu-objectif-1 (1).webp" alt="">
+  <!-- component -->
+  <div class="max-w-full mx-5 sm:mx-auto sm:px-6 lg:px-8">
+    <div class="sm:flex sm:space-x-4 w-2/3 mx-auto">
+        <div class="inline-block align-bottom rounded-lg text-left overflow-hidden shadow transform transition-all mb-4 w-full sm:w-1/3 sm:my-8">
+            <div class="p-5">
+                <div class="sm:flex sm:items-start">
+                    <div class="text-center sm:mt-0 sm:ml-2 sm:text-left items-center justify-center flex flex-col w-full gap-5">
+                        <p class="text-9xl font-bold text-white w-full text-center font-['Bebas_Neue']">92%</p>
+                        <h3 class="text-lg leading-6 font-medium text-white w-full text-center font-['Montserrat']">des entreprise <br> aujourd'hui utilisent et <br> dépendent des IA </h3>
                     </div>
                 </div>
-
-
-                <div id="collecte" class="w-[500px] h-[400px] absolute top-[180em] left-[7em]">
-                    <div id="bloc1" class="w-[380px] h-[301px] bg-white p-[19px] rounded-2xl shadow-2xl">
-                        <h4 class="font-montserrat text-[32px]"><strong>Collecte de <br> données de qualité :</strong></h4><br>
-                        <p class="font-montserrat font-light text-[16px]">
-                            
-                            Une IA performante dépend de données <br> pertinentes et de qualité.  <br> <br>
-                            Assurez-vous de collecter, nettoyer et <br> préparer des ensembles de données <br> représentatifs pour l'entraînement.
-
-                        </p>
-                        <img class="absolute top-[-126px] left-[-96px] w-[185px]" src="images/illu-collecte-données-1 (1).webp" alt="">
-                    </div>
-                </div>
-
-
-                <div id="choix" class="w-[500px] h-[400px] absolute top-[198em] left-[51em]">
-                    <div id="bloc1" class="w-[428px] h-[230px] bg-white p-[19px] rounded-2xl shadow-2xl">
-                        <h4 class="font-montserrat text-[32px]"><strong>Choix du modèle <br> adapté :</strong></h4><br>
-                        <p class="font-montserrat font-light text-[16px]">
-                            
-                            Sélectionnez le type d'algorithme ou de <br> modèle d'IA qui correspond le mieux à votre <br> problème
-
-                        </p>
-                        <img class="absolute top-[-177px] left-[281px] w-[242px]" src="images/illu-bon-ia-1.webp" alt="">
-                    </div>
-                </div>
-
-
-                <div id="evaluation" class="w-[500px] h-[400px] absolute top-[215em] left-[6em]">
-                    <div id="bloc1" class="w-[437px] h-[255px] bg-white p-[19px] rounded-2xl shadow-2xl">
-                        <h4 class="font-montserrat text-[32px]"><strong>Évaluation continue :</strong></h4><br>
-                        <p class="font-montserrat font-light text-[16px]">
-                            
-                            L'IA évolue avec le temps, il est donc crucial de <br> surveiller régulièrement ses performances <br><br>
-                            Mettre à jour les modèles, et de rester informé <br> sur les avancées technologiques dans le <br> domaine.
-
-                        </p>
-                        <img class="absolute top-[174px] left-[187px] w-[287px]" src="images/illu-evolution-1.webp" alt="">
-                    </div>
-                </div>
-
-                <img class="absolute w-[149px] h-[1522px] top-[148em] left-[598px]" src="images/Group 106.svg" alt="">
-        </section>
-
-        <section id="videos" class="grid grid-cols-2 h-[450px]">
-            <h2 class="text-white font-bebas text-[55px] grid justify-center content-center">comprendre les <br> problèmes liés à l’ia <br> en 90 secondes</h2>
-            <div id="video" class=""></div>
-
-        </section>
-
-        <section id="evenement" class="grid grid-rows-[85px_1fr] w-[1240px] m-auto gap-y-12">
-            <h2 class="text-white font-bebas text-[55px] grid justify-items-center">participez à des évènements</h2>
-
-            <article id="article1" class="grid grid-cols-[370px_1fr]">
-                <img src="images/image-4.webp" class="w-[370px] h-[363px]" alt="">
-                <p class="bg-white text-black font-montserrat text-[] rounded-r-2xl grid content-center pl-[42px] pt-[20px] "><span class="font-bebas text-[30px]">L’Avenir connecté</span>
-                
-                Rejoignez-nous pour une journée immersive dédiée à l'exploration des opportunités et des défis <br> posés par l'intelligence artificielle dans notre société moderne. "L'Avenir Connecté" est un <br> événement associatif passionnant qui réunit des esprits curieux, des professionnels de l'IA, des<br> chercheurs et des passionnés pour discuter, apprendre et inspirer l'avenir de cette révolution <br> technologique.
-                <br>
-                <br><img class="w-[26px]" src="images/Vector.webp" alt="">  
-                   <span class="relative top-[-25px] left-[32px]">Paris</span> 
-                    <img class="w-[26px]" src="images/Group-87.webp" alt=""> <span class="relative top-[-25px] left-[32px]">25/01/2024</span> 
-
-                    <button id="boutton" type="submit" class="w-[100px] bg-black text-white mb-[17px] w-[148px] h-[35px] font-bebas rounded-[10px]">Découvrir l’évènement</button>
-                
-                </p>
-            </article>
-
-
-            <article id="article2" class="grid grid-cols-[370px_1fr]">
-                <img src="images/image-10.webp" class="w-[370px] h-[363px]" alt="">
-                <p class="bg-white text-black font-montserrat text-[] rounded-r-2xl grid content-center pl-[42px] pt-[20px] "><span class="font-bebas text-[30px]">L’Avenir connecté</span>
-                
-                Rejoignez-nous pour une journée immersive dédiée à l'exploration des opportunités et des défis <br> posés par l'intelligence artificielle dans notre société moderne. "L'Avenir Connecté" est un <br> événement associatif passionnant qui réunit des esprits curieux, des professionnels de l'IA, des<br> chercheurs et des passionnés pour discuter, apprendre et inspirer l'avenir de cette révolution <br> technologique.
-                <br>
-                <br><img class="w-[26px]" src="images/Vector.webp" alt="">  
-                   <span class="relative top-[-25px] left-[32px]">Paris</span> 
-                    <img class="w-[26px]" src="images/Group-87.webp" alt=""> <span class="relative top-[-25px] left-[32px]">25/01/2024</span> 
-
-                    <button id="boutton" type="submit" class="w-[100px] bg-black text-white mb-[17px] w-[148px] h-[35px] font-bebas rounded-[10px]">Découvrir l’évènement</button>
-                
-                </p>
-            </article>
-
-
-            <article id="article3" class="grid grid-cols-[370px_1fr]">
-                <img src="images/image-12.webp" class="w-[370px] h-[363px]" alt="">
-                <p class="bg-white text-black font-montserrat text-[] rounded-r-2xl grid content-center pl-[42px] pt-[20px] "><span class="font-bebas text-[30px]">L’Avenir connecté</span>
-                
-                Rejoignez-nous pour une journée immersive dédiée à l'exploration des opportunités et des défis <br> posés par l'intelligence artificielle dans notre société moderne. "L'Avenir Connecté" est un <br> événement associatif passionnant qui réunit des esprits curieux, des professionnels de l'IA, des<br> chercheurs et des passionnés pour discuter, apprendre et inspirer l'avenir de cette révolution <br> technologique.
-                <br>
-                <br><img class="w-[26px]" src="images/Vector.webp" alt="">  
-                   <span class="relative top-[-25px] left-[32px]">Paris</span> 
-                    <img class="w-[26px]" src="images/Group-87.webp" alt=""> <span class="relative top-[-25px] left-[32px]">25/01/2024</span> 
-
-                    <button id="boutton" type="submit" class="w-[100px] bg-black text-white mb-[17px] w-[148px] h-[35px] font-bebas rounded-[10px]">Découvrir l’évènement</button>
-                
-                </p>
-            </article>
-                      
-
-
-        </section>
-
-
-        <section>
-            <h2 class="text-white font-bebas text-[55px] grid justify-items-center mt-[50px]">apprenez à maitriser l’ia en suivant nos articles</h2>
-            <div id="groupe-bouton" class="grid grid-cols-2 gap-x-7 mb-[50px]">
-                <button type="submit" id="boutton2" class="text-white font-bebas bg-[#FF6700] w-[178px] h-[48px] text-[19px] rounded-[10px] justify-self-end"> Consulter les articles</button>
-                <button type="submit" id="boutton3" class="text-white font-bebas bg-[#FF6700] w-[244px] h-[48px] text-[19px] rounded-[10px]">Recevoir les articles par mail  <i class="far fa-envelope fa-lg" style="color: #ffffff;"></i> </button>
-                
             </div>
-        </section>
+        </div>
+        <div class="inline-block align-bottom rounded-lg text-left overflow-hidden shadow transform transition-all mb-4 w-full sm:w-1/3 sm:my-8">
+            <div class="p-5">
+                <div class="sm:flex sm:items-start">
+                    <div class="text-center sm:mt-0 sm:ml-2 sm:text-left items-center justify-center flex flex-col w-full gap-5">
+                        <p class="text-9xl font-bold text-white w-full text-center font-['Bebas_Neue']">2,2</p>
+                        <h3 class="text-lg leading-6 font-medium text-white w-full text-center font-['Montserrat']">milliards d'euros <br> consacrés à l'IA en <br> France dans le projet <br> France 2030</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inline-block align-bottom rounded-lg text-left overflow-hidden shadow transform transition-all mb-4 w-full sm:w-1/3 sm:my-8">
+            <div class="p-5">
+                <div class="sm:flex sm:items-start">
+                    <div class="text-center sm:mt-0 sm:ml-2 sm:text-left items-center justify-center flex flex-col w-full gap-5">
+                        <p class="text-9xl font-bold text-white w-full text-center font-['Bebas_Neue']">65%</p>
+                        <h3 class="text-lg leading-6 font-medium text-white w-full text-center font-['Montserrat']">se disent craintives par <br> rapport à l'usage que <br> peuvent en faire leurs <br> employés.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
 
-        <section id="article" class="grid grid-cols-4 w-[76em] m-auto gap-x-6" >
-            <article id="article4" class="grid grid-rows-[170px_1fr]">
-                <img src="images/image-5.webp" class="h-[170px]" alt="">
-                <p class="text-black font-montserrat bg-white pl-[34px] pt-[16px] rounded-b-3xl text-[14px]"> <span class="font-bebas"> <strong class="text-[19px]">Lutter contre la désinformation <br> de l’IA un nouveau défi.</strong> </span> <br>
-                    L'intelligence artificielle (IA) <br> représente une avancée <br> technologique transformative, <br> mais elle n'est pas à l'abri des défis <br> éthiques. Parmi ceux-ci, la...
-                    <br>
-                    <br>
-                    <button type="submit" class="bg-[#060C1C] w-[100px] text-white mb-[14px] w-[148px] h-[35px] font-bebas rounded-[10px]">Découvrir l’évènement</button>
-                </p>
-                
-            </article>
 
-            <article id="article4" class="grid grid-rows-[170px_1fr]">
-                <img src="images/image-6.webp" class="h-[170px]" alt="">
-                <p class="text-black font-montserrat bg-white pl-[34px] pt-[16px] rounded-b-3xl text-[14px]"> <span class="font-bebas"> <strong class="text-[19px]">Lutter contre la désinformation <br> de l’IA un nouveau défi.</strong> </span> <br>
-                    L'intelligence artificielle (IA) <br> représente une avancée <br> technologique transformative, <br> mais elle n'est pas à l'abri des défis <br> éthiques. Parmi ceux-ci, la...
-                    <br>
-                    <br>
-                    <button type="submit" class="bg-[#060C1C] w-[100px] text-white mb-[14px] w-[148px] h-[35px] font-bebas rounded-[10px]">Découvrir l’évènement</button>
-                </p>
-                
-            </article>
 
-            <article id="article4" class="grid grid-rows-[170px_1fr]">
-                <img src="images/image-7.webp" class="h-[170px]" alt="">
-                <p class="text-black font-montserrat bg-white pl-[34px] pt-[16px] rounded-b-3xl text-[14px]"> <span class="font-bebas"> <strong class="text-[19px]">Lutter contre la désinformation <br> de l’IA un nouveau défi.</strong> </span> <br>
-                    L'intelligence artificielle (IA) <br> représente une avancée <br> technologique transformative, <br> mais elle n'est pas à l'abri des défis <br> éthiques. Parmi ceux-ci, la...
-                    <br>
-                    <br>
-                    <button type="submit" class="bg-[#060C1C] w-[100px] text-white mb-[14px] w-[148px] h-[35px] font-bebas rounded-[10px]">Découvrir l’évènement</button>
-                </p>
-                
-            </article>
 
-            <article id="article4" class="grid grid-rows-[170px_1fr]">
-                <img src="images/image-9.webp" class="h-[170px]" alt="">
-                <p class="text-black font-montserrat bg-white pl-[34px] pt-[16px] rounded-b-3xl text-[14px]"> <span class="font-bebas"> <strong class="text-[19px]">Lutter contre la désinformation <br> de l’IA un nouveau défi.</strong> </span> <br>
-                    L'intelligence artificielle (IA) <br> représente une avancée <br> technologique transformative, <br> mais elle n'est pas à l'abri des défis <br> éthiques. Parmi ceux-ci, la...
-                    <br>
-                    <br>
-                    <button type="submit" class="bg-[#060C1C] w-[100px] text-white mb-[14px] w-[148px] h-[35px] font-bebas rounded-[10px]">Découvrir l’évènement</button>
-                </p>
-                
-            </article>
 
-        </section>
 
-    </main>
-    <footer>
-        <div id="barre" class="w-100% h-0.5 bg-white mt-[90px]"></div>
-        <div id="menu-footer" class="grid grid-cols-[300px_1fr_300px] items-center">
-            <img src="images/LOGO-BLANC-7.webp" alt="" class="w-28 justify-self-center">
-            <ul class="text-white grid grid-cols-3 underline underline-offset-2">
-                <li><a href=""> Politique de cookies </a></li>
-                <li><a href=""> Mentions légales </a> </li>
-                <li><a href=""> Gestion des cookies </a> </li>
+
+
+  <h2 class="text-[55px] font-bold w-full px-5 text-center my-10 text-white font-['Bebas_Neue']">QUELS SONT LES RISQUES DE L'IA ?</h2>
+
+  <div class="grid grid-cols-1 mb-[50rem] sm:mb-0 h-[100rem] sm:h-[60rem] sm:grid-cols-2 w-full sm:w-1/2 gap-5 mx-auto">
+    
+    <style>
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    
+      }
+
+      .flip-card-back {
+        transform: rotateY(180deg);
+      }
+    </style>
+
+    <div class="flip-card bg-transparent w-auto h-auto mt-[25rem] sm:mt-[0rem]" style="perspective: 1000px;">
+      <div class="flip-card-inner relative w-full h-full text-center transition-transform duration-[0.6s] shadow-[0_4px_8px_0_rgba(0,0,0,0.2)]" style="transform-style: preserve-3d;">
+        <div class="flip-card-front absolute w-full h-full bg-transparent text-[black]">
+          <div class="card card-image-cover bg-white mx-auto w-full cardFlip hover:scale-[1.01] transition-all transition-duration-300">
+            <div class="card-body cardbody1 h-[344px]">
+             <img src="images/Illu-SÉCURITÉ-1.webp" alt="">
+              <h2 class="card-header text-black my-5 font-['Montserrat']">Protection de la vie privée</h2>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card-back absolute w-full h-full bg-transparent text-[white]">
+          <div class="card card-image-cover bg-white mx-auto w-full cardFlip hover:scale-[1.01] transition-all transition-duration-300">
+            <div class="card-body cardbody1 h-[344px]">
+              <h2 class="card-header text-black font-['Montserrat']">Protection de la vie privée</h2>
+              <p class="text-content2 text-black my-5">L'utilisation massive de données pour entraîner des modèles d'IA soulève des préoccupations quant à la protection de la vie privée des individus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card bg-transparent w-auto h-auto mt-[25rem] sm:mt-[0rem]" style="perspective: 1000px;">
+      <div class="flip-card-inner relative w-full h-full text-center transition-transform duration-[0.6s] shadow-[0_4px_8px_0_rgba(0,0,0,0.2)]" style="transform-style: preserve-3d;">
+        <div class="flip-card-front absolute w-full h-438px bg-transparent text-[black]">
+          <div class="card card-image-cover bg-white mx-auto w-full cardFlip hover:scale-[1.01] transition-all transition-duration-300">
+            <div class="card-body cardbody1 h-[344px]">
+             <img src="images/Illu-TRANSPARENCE-1.webp" class="w-[232px]" alt="">
+              <h2 class="card-header text-black my-5 font-['Montserrat']">Manque de transparence</h2>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card-back absolute w-full h-full bg-transparent text-[white]">
+          <div class="card card-image-cover bg-white mx-auto w-full cardFlip hover:scale-[1.01] transition-all transition-duration-300">
+            <div class="card-body cardbody1 h-[344px]">
+              <h2 class="card-header text-black font-['Montserrat']">Manque de transparence</h2>
+              <p class="text-content2 text-black my-5 font-['Montserrat']">Certains modèles d'IA, en particulier les réseaux de neurones profonds, peuvent être difficiles à comprendre, ce qui rend leur prise de décision opaque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card bg-transparent w-auto h-auto mt-[30rem] sm:mt-[0rem]" style="perspective: 1000px;">
+      <div class="flip-card-inner relative w-full h-full text-center transition-transform duration-[0.6s] shadow-[0_4px_8px_0_rgba(0,0,0,0.2)]" style="transform-style: preserve-3d;">
+        <div class="flip-card-front absolute w-full h-full bg-transparent text-[black]">
+          <div class="card card-image-cover bg-white mx-auto w-full cardFlip hover:scale-[1.01] transition-all transition-duration-300">
+            <div class="card-body cardbody1 h-[344px]">
+              <img src="images/biais-figma-1.webp" alt="">
+              <h2 class="card-header text-black my-5 font-['Montserrat']">Biais algorithmique</h2>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card-back absolute w-full h-full bg-transparent text-[white]">
+          <div class="card card-image-cover bg-white mx-auto w-full cardFlip hover:scale-[1.01] transition-all transition-duration-300">
+            <div class="card-body cardbody1 h-[344px]">
+              <h2 class="card-header text-black font-['Montserrat']">Biais algorithmique</h2>
+              <p class="text-content2 text-black my-5 font-['Montserrat']">Les IA peuvent reproduire des biais présents dans les données sur lesquelles elles sont formées, entraînant des décisions discriminatoires.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card bg-transparent w-auto h-auto mt-[31.5rem] sm:mt-[0rem]" style="perspective: 1000px;">
+      <div class="flip-card-inner relative w-full h-full text-center transition-transform duration-[0.6s] shadow-[0_4px_8px_0_rgba(0,0,0,0.2)]" style="transform-style: preserve-3d;">
+        <div class="flip-card-front absolute w-full h-full bg-transparent text-[black]">
+          <div class="card card-image-cover bg-white mx-auto w-full cardFlip hover:scale-[1.01] transition-all transition-duration-300">
+            <div class="card-body cardbody1 h-[344px]">
+              <img src="images/Illu-DÉPENDANCE-1.webp" alt="">
+              <h2 class="card-header text-black my-5 font-['Montserrat']">Dépendance technologique</h2>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card-back absolute w-full h-full bg-transparent text-[white]">
+          <div class="card card-image-cover bg-white mx-auto w-full cardFlip hover:scale-[1.01] transition-all transition-duration-300">
+            <div class="card-body cardbody1 h-[344px]">
+              <h2 class="card-header text-black font-['Montserrat']">Dépendance technologique</h2>
+              <p class="text-content2 text-black my-5 font-['Montserrat']">Une dépendance excessive à l'égard de l'IA peut rendre les entreprises vulnérables en cas de défaillance du système ou de perte de compétences humaines.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="bg-orange-500 w-full py-5 my-20 bg-[url('./images/FOND-ORANGE-1.webp')]">
+    <h2 class="text-[55px] font-bold w-full px-5 text-center mt-10 text-white font-['Bebas_Neue']">EXPLOITEZ LE MEILLEUR DE L'IA EN 4 ÉTAPES</h2>
+
+    <img src="images/Group-106.webp" alt="Lines" class="absolute left-1/2 ms-[-5%] hidden sm:block" style="transform: scale(0.7) scaleX(-1);">
+
+    <section class="flex flex-row sm:hidden h-auto my-10 items-center justify-around py-10">
+
+      <div class="h-full p-1">
+        <ol class="steps steps-vertical h-full">
+          <li class="step">
+            <div class="step-circle"></div>
+          </li>
+          <li class="step">
+            <div class="step-circle"></div>
+          </li>
+          <li class="step">
+            <div class="step-circle"></div>
+          </li>
+          <li class="step">
+            <div class="step-circle"></div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="flex flex-col gap-5 p-2">
+        <div class="card items-center w-full m-auto h-auto transition-all transition-duration-300 hover:scale-105">
+          <div class="card-body bg-white rounded">
+            <h2 class="card-header text-black font-['Montserrat']">Définir un objectif clair</h2>
+            <p class="text-content2 text-black font-['Montserrat']">Avant d'utiliser l'IA, identifiez précisément l'objectif que vous souhaitez atteindre. Que ce soit l'automatisation de tâches, l'analyse de données, ou autre.</p>
+          </div>
+        </div>
+
+        <div class="card items-center w-full m-auto h-auto transition-all transition-duration-300 hover:scale-105">
+          <div class="card-body bg-white rounded">
+            <h2 class="card-header text-black font-['Montserrat']">Collecte de données de qualité</h2>
+            <p class="text-content2 text-black font-['Montserrat']">Une IA performante dépend de données pertinentes et de qualité. Assurez-vous de collecter, nettoyer et préparer des ensembles de données représentatifs pour l'entraînement.</p>
+          </div>
+        </div>
+
+        <div class="card items-center w-full m-auto h-auto transition-all transition-duration-300 hover:scale-105">
+          <div class="card-body bg-white rounded">
+            <h2 class="card-header text-black font-['Montserrat']">Choix du modèle adapté</h2>
+            <p class="text-content2 text-black font-['Montserrat']">Sélectionnez le type d'algorithme ou de modèle d'IA qui correspond le mieux à votre problème.</p>
+          </div>
+        </div>
+
+        <div class="card items-center w-full m-auto h-auto transition-all transition-duration-300 hover:scale-105">
+          <div class="card-body bg-white rounded">
+            <h2 class="card-header text-black font-['Montserrat']">Évaluation continue</h2>
+            <p class="text-content2 text-black font-['Montserrat']">L'IA évolue avec le temps, il est donc crucial de surveiller régulièrement ses performances. Mettre à jour les modèles, et de rester informé sur les avancées technologiques dans le domaine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hidden sm:grid h-auto my-10 grid-cols-2 items-center justify-around py-10">
+
+      <div class="card items-center w-full m-auto h-auto transition-all transition-duration-300 hover:scale-105">
+        <div class="card-body bg-white rounded">
+          <img src="images/illu-objectif-1 (1).webp" alt="image objectif" class="h-[10rem] w-auto absolute m-[-7.5rem]">
+          <h2 class="card-header text-black font-['Montserrat']">Définir un objectif clair</h2>
+          <p class="text-content2 text-black font-['Montserrat']">Avant d'utiliser l'IA, identifiez précisément l'objectif que vous souhaitez atteindre. Que ce soit l'automatisation de tâches, l'analyse de données, ou autre.</p>
+        </div>
+      </div>
+
+      <div class="w-full"></div>
+      
+      <div class="w-full"></div>
+
+      <div class="card items-center w-full m-auto h-auto transition-all transition-duration-300 hover:scale-105">
+        <div class="card-body bg-white rounded">
+          <img src="images/illu-collecte-données-1 (1).webp" alt="image collecte données" class="h-[10rem] w-auto absolute m-[-7.5rem]">
+          <h2 class="card-header text-black font-['Montserrat']">Collecte de données de qualité</h2>
+          <p class="text-content2 text-black font-['Montserrat']">Une IA performante dépend de données pertinentes et de qualité. Assurez-vous de collecter, nettoyer et préparer des ensembles de données représentatifs pour l'entraînement.</p>
+        </div>
+      </div>
+
+      <div class="card items-center w-full m-auto h-auto transition-all transition-duration-300 hover:scale-105">
+        <div class="card-body bg-white rounded">
+          <img src="images/illu-bon-ia-1.webp" alt="" class="h-[10rem] w-auto absolute m-[-7.5rem]">
+          <h2 class="card-header text-black font-['Montserrat']">Choix du modèle adapté</h2>
+          <p class="text-content2 text-black font-['Montserrat']">Sélectionnez le type d'algorithme ou de modèle d'IA qui correspond le mieux à votre problème.</p>
+        </div>
+      </div>
+      
+      <div class="w-full"></div>
+      
+      <div class="w-full"></div>
+      
+      <div class="card items-center w-full m-auto h-auto transition-all transition-duration-300 hover:scale-105">
+        <div class="card-body bg-white rounded">
+          <img src="images/illu-evolution-1.webp" alt="" class="h-[10rem] w-auto absolute m-[-7.5rem]">
+          <h2 class="card-header text-black">Évaluation continue</h2>
+          <p class="text-content2 text-black">L'IA évolue avec le temps, il est donc crucial de surveiller régulièrement ses performances. Mettre à jour les modèles, et de rester informé sur les avancées technologiques dans le domaine.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+
+
+
+  <section class=" py-10">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+        <div class="flex flex-col justify-center">
+            <h1 class=" font-['Bebas_Neue'] mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white">comprendre les <br>problèmes liés à l'ia <br> en 90 secondes</h1>
+            
+        </div>
+        <div>
+            <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-96 shadow-xl" src="images/motion_utopian-wave.mp4" title="video motion IA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="w-full">
+    <h2 class=" font-['Bebas_Neue'] text-[55px] font-bold w-full px-5 text-center my-10 text-white">Participez à des évènements</h2>
+
+    <ul role="list" class="w-full px-5 sm:px-0 sm:w-2/3 m-auto">
+      <li class="flex justify-between gap-x-6 bg-white mt-5 opacity-90 hover:opacity-100 transition-all transition-duration-300 rounded-[35px]">
+        <div class="flex flex-col sm:flex-row min-w-0 gap-x-4">
+          <img class="w-full h-auto sm:h-full sm:w-auto flex-none rounded-l[35px]" src="images/image-4.webp" alt="">
+          <div class="min-w-0 flex-auto p-5">
+            <p class="text-lg font-semibold leading-6 text-black font-['Montserrat'] mt-1">L'Avenir connecté</p>
+            <p class="w-full sm:w-full text-xs leading-5 text-black font-['Montserrat'] mt-1">Rejoignez-nous pour une journée immersive dédiée à l'exploration des opportunités et des défis posés par l'intelligence artificielle dans notre société moderne. "L'Avenir Connecté" est un événement associatif passionnant qui réunit des esprits curieux, des professionnels de l'IA, des chercheurs et des passionnés pour discuter, apprendre et inspirer l'avenir de cette révolution technologique.</p>
+            <div class="w-full flex flex-row items-center mt-1 gap-1">
+              <p class="text-xs leading-5 text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+              </p>
+              <p class="text-xs leading-5 text-black font-['Montserrat']">Paris</p>
+            </div>
+            <div class="w-full flex flex-row items-center mt-1 gap-1">
+              <p class="text-xs leading-5 text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                </svg>                
+              </p>
+              <p class="text-xs leading-5 text-black font-['Montserrat']">01/04/2024</p>
+            </div>
+            <button class="btn btn-black mt-3 font-['Montserrat'] text-white" >Découvrir l'évènement</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="flex justify-between gap-x-6 bg-white rounded mt-5 opacity-90 hover:opacity-100 transition-all transition-duration-300 rounded-[35px]">
+        <div class="flex flex-col sm:flex-row min-w-0 gap-x-4">
+          <img class="w-full h-auto sm:h-full sm:w-auto flex-none rounded-l[35px]" src="images/image-10.webp" alt="">
+          <div class="min-w-0 flex-auto p-5">
+            <p class="text-lg font-semibold leading-6 text-black font-['Montserrat'] mt-1">INTELLIGENCE, différentes par nature</p>
+            <p class="w-full sm:w-full text-xs leading-5 text-black font-['Montserrat'] mt-1">Découv rez un parcours consacrée aux capacités intellectuelles et aux pouvoirs extraordinaires de l'homme. L'Homo Sapiens a en effet accès au langage, à la technique, aux sciences, à la création artistique et à des formes complexes de socialisation. Si le visiteur peut s'amuser à atteindre les limites des tests du quotient intellectuel, l'exposition va encore plus loin en abordant un concept qui fait beaucoup parler ces derniers temps : l'intelligence artificielle.</p>
+            <div class="w-full flex flex-row items-center mt-1 gap-1">
+              <p class="text-xs leading-5 text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+              </p>
+              <p class="text-xs leading-5 text-black font-['Montserrat']">Rennes</p>
+            </div>
+            <div class="w-full flex flex-row items-center mt-1 gap-1">
+              <p class="text-xs leading-5 text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                </svg>                
+              </p>
+              <p class="text-xs leading-5 text-black font-['Montserrat']">10/03/2024</p>
+            </div>
+            <button class="btn btn-black mt-3 font-['Montserrat'] text-white">Découvrir l'évènement</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="flex justify-between gap-x-6 bg-white rounded mt-5 opacity-90 hover:opacity-100 transition-all transition-duration-300 rounded-[35px]">
+        <div class="flex flex-col sm:flex-row min-w-0 gap-x-4">
+          <img class="w-full h-auto sm:h-full sm:w-auto flex-none rounded-l[35px]" src="images/image-12.webp" alt="">
+          <div class="min-w-0 flex-auto p-5">
+            <p class="text-lg font-semibold leading-6 text-black font-['Montserrat'] mt-1">IA et libre-arbitre</p>
+            <p class="w-full sm:w-full text-xs leading-5 text-black font-['Montserrat'] mt-1">Les technologies d’intelligence artificielle sont de plus en plus présentes et déterminantes dans notre quotidien. Quels sont leurs effets sur notre comportement et nos décisions ? Selon les cas d'usage, quels sont les effets potentiels des IA sur les biais ou la standardisation de nos goûts, de nos choix, voire de nos opinions politiques ? Comment garantir un équilibre 
+              vers des effets positifs ? </p>
+            <div class="w-full flex flex-row items-center mt-1 gap-1">
+              <p class="text-xs leading-5 text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+              </p>
+              <p class="text-xs leading-5 text-black font-['Montserrat']">En ligne</p>
+            </div>
+            <div class="w-full flex flex-row items-center mt-1 gap-1">
+              <p class="text-xs leading-5 text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                </svg>                
+              </p>
+              <p class="text-xs leading-5 text-black font-['Montserrat']">28/11/2023</p>
+            </div>
+            <button class="btn btn-black mt-3 font-['Montserrat'] text-white">Découvrir l'évènement</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+
+
+
+
+
+
+  <section class="my-24">
+    <h2 class="text-[55px] font-bold w-full px-5 text-center my-10 text-white font-['Bebas_Neue']">Apprenez à maitriser l'ia en suivant nos articles</h2>
+    
+    <div class="flex items-center justify-center">
+      <div class="inline-flex rounded-md shadow-sm mx-5 sm:mx-0" role="group">
+        <button type="button" class=" font-['Bebas_Neue'] inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-orange-600 border border-orange-700 rounded-s-lg hover:bg-orange-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+          
+          Consulter les articles
+        </button>
+        <button type="button" class=" font-['Bebas_Neue'] inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-orange-600 border border-orange-700 rounded-e-lg hover:bg-orange-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+         
+          Recevoir les articles par mail
+          <i class="far fa-envelope fa-lg ml-[5px]" style="color: #ffffff;"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-4 gap-5 my-10 w-11/12 m-auto">
+      <div class="card card-image-cover">
+        <img src="images/image-5.webp" alt="" />
+        <div class="card-body bg-white h-[384px]">
+          <h2 class="card-header text-black font-['Montserrat']">Lutter contre la désinformation de l'IA un nouveau défi.</h2>
+          <p class="text-content2 text-black font-['Montserrat']">L'intelligence artificielle (IA) représente une avancée technologique transformative, mais elle n'est pas à l'abri des défis éthiques. Parmi ceux-ci, la...</p>
+          <div class="card-footer">
+            <button class="bg-[#060C1C] btn font-['Montserrat'] text-white mt-[29px]">Découvrir l'évènement</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-image-cover">
+        <img src="images/image-6.webp" alt="" />
+        <div class="card-body bg-white">
+          <h2 class="card-header text-black font-['Montserrat']">IA générative: comment améliorer le bon fonctionnement du droit?</h2>
+          <p class="text-content2 text-black font-['Montserrat']">Près d'un an après l'émergence du phénomène ChatGPT, l'intelligence artificielle générative apparaît comme une opportunité pour accélérer ...</p>
+          <div class="card-footer">
+            <button class="bg-[#060C1C] btn font-['Montserrat'] text-white">Découvrir l'évènement</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-image-cover">
+        <img src="images/image-7.webp" alt="" />
+        <div class="card-body bg-white h-[384px]">
+          <h2 class="card-header text-black font-['Montserrat']">IA inclusive : le rôle des femmes dans l'intelligence artificielle.</h2>
+          <p class="text-content2 text-black font-['Montserrat']">La sous-représentation des femmes dans le domaine de l'Intelligence Artificielle (IA) est une réalité. Seulement 12 % des chercheurs en IA sont ...</p>
+          <div class="card-footer">
+            <button class="bg-[#060C1C] btn font-['Montserrat'] text-white mt-[52px]">Découvrir l'évènement</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-image-cover">
+        <img src="images/image-9.webp" alt="" />
+        <div class="card-body bg-white h-[384px]">
+          <h2 class="card-header text-black font-['Montserrat']">Enseigner l'anglais avec Captain Kelly</h2>
+          <p class="text-content2 text-black font-['Montserrat']">Captain Kelly est un assistant vocal pour l’apprentissage de l’anglais à l’école élémentaire. Cette ressource permet de travailler les connaissance ...</p>
+          <div class="card-footer">
+            <button class="bg-[#060C1C] btn font-['Montserrat'] text-white mt-[80px]">Découvrir l'évènement</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+    <footer class=" rounded-lg shadow  m-4">
+      <hr class="my-6 border-white sm:mx-auto lg:my-8" />
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="#" class="flex items-center justify-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <img src="images/LOGO-BLANC-7.webp" class="w-[75px]" alt="logo">          
+            </a>
+            <ul class="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-black sm:mb-0 dark:text-white">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6 font-['Montserrat']">Politique de cookies</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6 font-['Montserrat']">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6 font-['Montserrat']">Gestion des cookies</a>
+                </li>
             </ul>
-
-            <ul class="grid grid-cols-4 w-[135px]">
-                <li><a href=""><i class="fa-brands fa-snapchat fa-lg" style="color: #ffffff;"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-facebook-f fa-lg" style="color: #ffffff;"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i></a></li>
+            <ul class="grid grid-cols-3">
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6">
+                  <i class="fa-brands fa-snapchat fa-lg" style="color: #ffffff;"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6">
+                  <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6">
+                  <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i>
+                </a>
+              </li>
             </ul>
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
